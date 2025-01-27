@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to left, violet,skyblue,purple);
+    overflow: hidden;
+}
+.heading{
+    height: 6vh;
+    text-align: center;
+    padding: 2vh;
+    font-size: 3rem;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    background-color: red;
+    color: white;
+}
+.images{
+    height: 75vh;
+}
+.images .img1{
+    width: 100%;
+    height: 50%;
+    display: hidden;
+    padding-left: 10vw;
+}
+.images .img2{
+    width: 100%;
+    height: 50%;
+    display: hidden;
+    padding-left: 10vw;
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+#in{
+    width: 50%;
+    height: 6vh;
+    font-size: 1.5rem;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 1vh;
+}
+#send{
+    display: flex;
+    width: 5%;
+    height: 8.5vh;
+    font-size: 4rem;
+    color: white;
+    background-color: red;
+    margin-left:2vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+#send:hover{
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+@media screen and (max-width:500px) {
+    #in{
+        width: 70%;
+    }
+    #send{
+        width: 15%;
+    }
+}
