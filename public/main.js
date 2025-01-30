@@ -3,6 +3,12 @@ let input = document.querySelector("#in");
 let submit = document.querySelector("#send");
 
 const getImages = async () => {
+   
+   imagesEl.forEach(el=>{
+        el.src = "./loading.svg";
+        el.style.display = "flex";
+    });
+
     const response = await fetch('/generate', {
         headers: {
             'Content-Type': "application/json"
@@ -26,5 +32,4 @@ const getImages = async () => {
         imagesEl[i].style.display = "flex";
     });
 }
-
 submit.addEventListener("click", getImages)
